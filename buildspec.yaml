@@ -1,0 +1,11 @@
+
+version: 0.2
+
+phases:
+  build:
+    commands:
+      # - npm run build:$ENVIRONMENT
+      - npm run build
+  post_build:
+    commands:
+      - npx aws s3 cp ./dist $S3_BUCKET --recursive
