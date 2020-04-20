@@ -42,7 +42,7 @@ export default function SimpleSelect() {
   const [selectedUntilDate, setSelectedUntilDate] = React.useState(new Date());
   const [accountError, setAccountError] = React.useState(false);
   const [selectError, setSelectError] = React.useState(false);
-  const rootAPI = process.env.NODE_ENV == 'production' ? "https://thawing-chamber-12594.herokuapp.com" : "http://localhost:5000"
+  const rootAPI = process.env.NODE_ENV == 'production' ? "https://fierce-plateau-79507.herokuapp.com" : "http://localhost:5000"
   console.log(process.env.NODE_ENV)
   const handleAccountInput = (event) => {
     setAccount(event.target.value)
